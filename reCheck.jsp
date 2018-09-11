@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<% request.setCharacterEncoding("utf-8");%> <!doctype html> <!-- reCheck.jsp -->
+<% request.setCharacterEncoding("utf-8");%> <!doctype html> <!-- regCheck.jsp -->
 <html>
 <head> <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -22,7 +22,7 @@
       <h2>성별:<%=request.getParameter("stud_gender")%>,
          비밀번호:<% String [] uHobby =request.getParameterValues("stud_hobby")%>
       <% if(uHobby==null){
-      out.println("입력내요없음");
+      out.println("입력내용없음");
       }
       else{
          for(int i=0;i<uHobby.length;i++){
